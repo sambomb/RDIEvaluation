@@ -16,7 +16,7 @@ namespace RDI_Evaluation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCurrencyConverter());
+            Application.Run(new FormProblems());
         }
     }
 }

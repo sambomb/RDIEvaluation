@@ -46,16 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormCurrencyConverter.cs">
+    <Compile Include="Currency\FormCurrencyConverter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCurrencyConverter.Designer.cs">
+    <Compile Include="Currency\FormCurrencyConverter.Designer.cs">
       <DependentUpon>FormCurrencyConverter.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProblems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProblems.Designer.cs">
+      <DependentUpon>FormProblems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Posicao.cs" />
+    <Compile Include="Robot\FormRobotLoop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Robot\FormRobotLoop.Designer.cs">
+      <DependentUpon>FormRobotLoop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Robot\Movimentos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormCurrencyConverter.resx">
+    <EmbeddedResource Include="Currency\FormCurrencyConverter.resx">
       <DependentUpon>FormCurrencyConverter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProblems.resx">
+      <DependentUpon>FormProblems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Robot\FormRobotLoop.resx">
+      <DependentUpon>FormRobotLoop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,5 +99,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
